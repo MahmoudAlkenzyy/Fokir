@@ -251,6 +251,9 @@ h1 {
     .cv-img-container {
         width: 100%;
     }
+    .cv-button button {
+        margin: 10px 0;
+    }
 }
 @media screen and (max-width: 768px) {
     .cv-content {
@@ -262,6 +265,9 @@ h1 {
     }
     .cv-img-container {
         width: 100%;
+    }
+    .cv-button button {
+        margin: 10px 0;
     }
 }
 /*---*/
@@ -486,7 +492,7 @@ h1 {
 }
 @media screen and (max-width: 991px) {
     .profile-item {
-        width: 30%;
+        width: 50%;
     }
     #our-profile .container {
         width: 90%;
@@ -494,10 +500,10 @@ h1 {
 }
 @media screen and (max-width: 768px) {
     .profile-item {
-        width: 50%;
+        width: 100%;
     }
     #our-profile .container {
-        width: 90%;
+        width: 95%;
     }
 }
 /*statistics Section*/

@@ -20,10 +20,87 @@ ul {
 a {
     text-decoration: none;
 }
-
+/*nav Section*/
+.nav-bar {
+    background-color: #292929;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav-container {
+    width: 1071px;
+    padding: 10px 20px;
+}
+.nav-bar .nav-logo a {
+    color: #ff305b;
+    font-size: 25px;
+}
+.nav-bar ul {
+    display: flex;
+    padding: 10px 0;
+}
+.nav-bar ul li a {
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+.nav-bar ul li a:hover {
+    color: #ff305b;
+}
+.active {
+    color: #ff305b !important;
+}
+.icon {
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+@media (min-width: 1200px) {
+    .nav-container {
+        width: 1070px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .nav-container {
+        width: 970px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .nav-container {
+        width: 750px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .container {
+        width: 450px;
+    }
+    .nav-list {
+        display: none;
+    }
+    .icon {
+        display: block;
+    }
+    .nav-logo {
+        width: 50%;
+    }
+    .nav .icon {
+        width: 50%;
+        text-align: end;
+    }
+}
 /*Home Secyion*/
 #home {
-    background-image: url(imges/hero\ img.jpg);
+    background-image: url(./imges/hero\ img.jpg);
     height: 100vh;
     background-position: center center;
     background-size: cover;
@@ -79,4 +156,159 @@ h1 {
     .text h4 {
         font-size: 18px;
     }
+}
+
+/*CV Section*/
+#cv {
+    padding: 50px 0;
+}
+
+.cv-button button {
+    background-color: #ff305b;
+    padding: 10px 25px;
+    font-size: 16px;
+    border: 0;
+    margin-right: 10px;
+    border-radius: 4px;
+    color: white;
+    transition: 0.3s;
+}
+.cv-img {
+    float: left;
+    width: 40%;
+    padding-right: 24px;
+}
+
+.cv-img img {
+    width: 100%;
+}
+.cv-img-position {
+    transform: translate(24px, 24px);
+    border-radius: 5px;
+    position: relative;
+}
+.cv-img-layer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.57);
+    height: 0;
+    transition: height 0.5s 0s ease;
+    transition-property: height, opacity;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+}
+.cv-img-position:hover .cv-img-layer {
+    height: 100%;
+    z-index: 100;
+    opacity: 1;
+}
+.cv-img-container {
+    width: 85%;
+    margin-left: auto;
+    border: #555555 8px solid;
+    border-radius: 5px;
+}
+.clr {
+    clear: both;
+}
+.cv-content {
+    float: left;
+    width: 60%;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+.containt-container {
+    width: 90%;
+    margin-left: auto;
+}
+.social-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+.social-icons li {
+    display: inline-block;
+    padding-left: 15px;
+}
+.social-icons i {
+    color: white;
+    transition: 0.3s;
+    font-size: 20px;
+}
+.social-icons i:hover {
+    color: #ff305b;
+}
+@media screen and (max-width: 991px) {
+    .cv-img-container {
+        border: 0;
+    }
+    .cv-img-container {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .cv-content {
+        width: 100%;
+    }
+    .cv-img {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .cv-img-container {
+        width: 100%;
+    }
+}
+/*---*/
+
+.cv-content h2 {
+    font-size: 32px;
+    font-weight: 600;
+    padding-left: 13px;
+    position: relative;
+    line-height: 23px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    color: #333333;
+}
+.cv-content h2::before {
+    content: '';
+    width: 4px;
+    height: 100%;
+    background-color: #ff305b;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.cv-content p {
+    font-size: 16px;
+    color: #555555;
+    text-align: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px dashed #555555;
+    font-weight: 400;
+}
+
+.cv-details li {
+    float: left;
+    width: 40%;
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #555555;
+}
+.cv-details span {
+    color: #333333;
+    font-weight: 600;
+}
+
+.cv-button button:hover {
+    background-color: #ec2403;
+    cursor: pointer;
+    transform: scale(1.001);
 }

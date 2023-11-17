@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,900italic,900,700italic,700,600italic,600,400italic,300italic,300,200italic');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro';
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Source Sans Pro';
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/*Home Secyion*/
+#home {
+    background-image: url(imges/hero\ img.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+
+    position: relative;
+}
+.layer {
+    background-color: rgba(0, 0, 0, 0.8);
+    min-height: 100%;
+    width: 100%;
+}
+h1 {
+    color: #ff305b;
+}
+.text {
+    top: 50%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    line-height: 25px;
+    transform: translate(-50%, -50%);
+}
+.text h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 26px;
+}
+.text h1 {
+    font-size: 65px;
+    color: #ff305b;
+    margin-bottom: 10px;
+    line-height: 77px;
+}
+.text h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    line-height: 31px;
+    font-weight: 400;
+}
+#typing {
+    border-right: white solid 2px;
+}
+@media screen and (max-width: 767px) {
+    .text h3 {
+        font-size: 20px;
+    }
+
+    .text h1 {
+        font-size: 34px;
+    }
+    .text h4 {
+        font-size: 18px;
+    }
+}

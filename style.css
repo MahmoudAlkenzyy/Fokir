@@ -821,3 +821,110 @@ h1 {
 .ourblog-item-img {
     min-height: 120px;
 }
+/*Content Us Section*/
+#content-us {
+    padding: 50px 0;
+}
+#content-us h2 {
+    position: relative;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+    font-size: 35px;
+    line-height: 30px;
+    color: #333333;
+}
+#content-us h2::after {
+    content: '';
+    width: 70px;
+    height: 10px;
+    border: #ff305b solid;
+    border-width: 1px 0;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -5px);
+}
+#content-us h2::before {
+    content: '';
+    width: 150px;
+    border-bottom: solid #ff305b;
+    border-width: 1px 0;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, 0);
+}
+.content-us-form {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    justify-self: center;
+}
+.content-us-form form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+.content-us-form input,
+.content-us-form textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.content-us-form .input {
+    padding: 0 15px 25px;
+    width: 100%;
+    border: none;
+}
+.content-us-form input:focus {
+    transition: border-color ease-in-out 0.15s;
+}
+.content-us-form input:focus {
+    border-color: #ff305b;
+    outline: 0;
+}
+.content-us-form form .userName,
+.content-us-form form .email {
+    width: 50%;
+}
+.form-btn {
+    padding: 0 15px 30px;
+}
+.content-us-form form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff305b;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.content-us-form form button:hover {
+    background-color: #ec2403;
+}
+@media screen and (max-width: 990px) {
+    #content-us .container {
+        width: 90%;
+    }
+    .content-us-form form {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 768px) {
+    #content-us .container {
+        width: 90%;
+    }
+    .content-us-form form {
+        width: 90%;
+    }
+    .content-us-form form .userName,
+    .content-us-form form .email,
+    input {
+        width: 100%;
+    }
+}

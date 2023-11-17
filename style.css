@@ -490,7 +490,7 @@ h1 {
 .profile-item:hover .profile-layer {
     opacity: 1;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
     .profile-item {
         width: 50%;
     }

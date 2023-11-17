@@ -928,3 +928,35 @@ h1 {
         width: 100%;
     }
 }
+
+/*footer*/
+#footer {
+    padding: 40px 0;
+    background-color: #333333;
+    color: #ffffff;
+}
+.fotter-content {
+    display: flex;
+    line-height: 25px;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+.fotter-content .social-icons {
+    position: static;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    width: 100%;
+    text-align: center;
+}
+.fotter-content .social-icons li {
+    padding: 10px;
+}
+.fotter-content p span {
+    color: #ff305b;
+}

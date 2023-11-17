@@ -312,3 +312,92 @@ h1 {
     cursor: pointer;
     transform: scale(1.001);
 }
+/*Services*/
+#service {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 50px 0;
+}
+#service h2 {
+    font-size: 35px;
+    color: #333333;
+    line-height: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    position: relative;
+}
+#service h2::after {
+    content: '';
+    width: 70px;
+    height: 10px;
+    border: #ff305b solid;
+    border-width: 1px 0;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -5px);
+}
+#service h2::before {
+    content: '';
+    width: 150px;
+    border-bottom: solid #ff305b;
+    border-width: 1px 0;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, 0);
+}
+.services {
+    overflow: auto;
+}
+.services-item {
+    float: left;
+    width: 25%;
+    padding: 40px 15px;
+    transition: 0.5s;
+    transition-property: color, box-shadow, transform;
+}
+.services-item i {
+    margin-bottom: 20px;
+    font-size: 36px;
+    line-height: 36px;
+    color: #ff305b;
+    transition: transform 0.5s;
+}
+.services-item h3 {
+    color: #333333;
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.services-item p {
+    color: #555555;
+    font-size: 15px;
+    line-height: 25px;
+}
+.services-item:hover {
+    background-color: white;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+}
+.services-item:hover i {
+    transform: scale(1.2);
+}
+@media screen and (max-width: 991px) {
+    .services-item {
+        width: 50%;
+    }
+    .services-item i {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .services-item {
+        width: 100%;
+        padding: 35px 40px;
+    }
+    .services-item i {
+        font-size: 30px;
+    }
+}
